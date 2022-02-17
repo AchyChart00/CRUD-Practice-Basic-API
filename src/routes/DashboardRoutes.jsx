@@ -12,10 +12,12 @@ export const DashboardRoutes = () => {
 
         <NavBar />
         <Routes>
-            <Route path="/create" element={<CreateCrud />} />
-            <Route path="/read" element={<ReadCrud />} />
-            <Route path="/update" element={<UpdateCrud />} />
-            <Route path="/delete" element={<DeleteCrud />} />
+            <Route path="create" element={<CreateCrud />} />
+            <Route path="read" element={<ReadCrud />} />
+            <Route path="update" element={<UpdateCrud />} />
+            <Route path="delete" element={<DeleteCrud />} />
+            
+            <Route path="/" element={<CreateCrud />} /> 
 
             <Route />
         </Routes>

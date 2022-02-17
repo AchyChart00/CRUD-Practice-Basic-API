@@ -15,7 +15,7 @@ const createUser = async(usuario) => {
     return await resp.json();
 }
 
-const readUser = async(id) => {
+const readUser = async({id}) => {
     
     const resp = await fetch(`${userURL}/${id}`);
     const {data} = await resp.json();
@@ -36,7 +36,7 @@ const readUser = async(id) => {
     return await resp.json();
 }
 
- const deleteUser = async(id) => {
+ const deleteUser = async({id}) => {
     const resp = await fetch(`${userURL}/${id}`, {
         method: 'DELETE'
     });
